@@ -1,0 +1,12 @@
+TODO: Debugging
+---------------------------------------------------------------------
+- Stellen Sie den Code unter git Versionskontrolle
+  - Machen Sie mehrere Commits zu sinnvollen Zeitpunkten
+
+- Finden und fixen Sie die Bugs in den Klassen "Book" und "BookTable".
+  - Verwenden Sie Logfile sowie Debugger
+  - Bauen Sie in Ihre Klassen Logger und sinnvolle Log statements ein
+
+- Verwenden Sie die Klasse "BookTableTest" um Ihre Bugfixes zu testen.
+
+
