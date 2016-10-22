@@ -1,10 +1,11 @@
 package at.fhj.itm.swq.debug;
 
+import java.util.HashSet;
 import java.util.Set;
 
 public class BookTable
 {
-	private Set<Book> books;
+	private Set<Book> books = new HashSet<Book>();
 	
 	public void insert(Book book)
 	{
@@ -22,7 +23,7 @@ public class BookTable
 		
 		for(Book b: books)
 		{
-			if(getId() == id)
+			if(b.getId() == id)
 				return b;
 		}
 		return null;
@@ -31,11 +32,5 @@ public class BookTable
 	public Set<Book> findAll()
 	{
 		return books;
-	}
-	
-	private int getId()
-	{
-		// TODO Auto-generated method stub
-		return 0;
 	}
 }

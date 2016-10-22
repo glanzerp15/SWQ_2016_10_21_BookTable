@@ -46,7 +46,27 @@ public class Book
 		this.authors = authors;
 	}
 	
-	public String toSting()
+	@Override
+	public boolean equals(Object obj) {
+		
+		Book bookCheck = (Book) obj;
+		boolean isEqual = false;
+		
+		if(this.id == bookCheck.id)
+		{
+			isEqual = true;
+		}
+		
+		return isEqual;
+		
+	}
+	
+	@Override
+	public int hashCode() {
+		return id;
+	}
+	
+	public String toString()
 	{
 		return getId() + "," + getTitle() + "," + getAuthors();
 	}
